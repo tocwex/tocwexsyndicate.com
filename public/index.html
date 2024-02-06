@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>~tocwex.syndicate</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/htmx.org"></script>
+  </head>
+  <body class="max-w-screen-2xl mx-auto">
+    <nav class="mx-4 mt-1.5 mb-2">
+      <ul class="pb-2 pt-1 flex justify-between border-black border-b-2">
+        <div class="">
+          <div
+            class="mx-2 p-1.5 border-2 rounded-sm border-white ease-in-out hover:text-yellow-500 duration-300 font-medium"
+          >
+            <a href="#">~tocwex.syndicate</a>
+          </div>
+        </div>
+        <div class="flex">
+          <div
+            class="sm:block hidden mx-2 p-1.5 border-2 border-white ease-in-out hover:italic active:underline active:italic duration-300"
+          >
+            <a href="#fund">%fund</a>
+          </div>
+          <div
+            class="sm:block hidden mx-2 p-1.5 border-2 border-white ease-in-out hover:italic active:underline active:italic duration-300"
+          >
+            <a href="#ethos">ethos</a>
+          </div>
+          <div
+            class="hidden sm:block mx-2 p-1.5 border-2 duration-300 border-black hover:rounded-lg hover:bg-yellow-400 hover:border-yellow-400 rounded-sm"
+          >
+            <a href="#betasignup">beta access</a>
+          </div>
+          <div
+            class="sm:hidden block mx-2 p-1.5 border-2 duration-300 border-black hover:rounded-lg hover:bg-yellow-400 hover:border-yellow-400 rounded-sm"
+          >
+            <a href="#betacard">beta access</a>
+          </div>
+        </div>
+      </ul>
+    </nav>
+    <div id="maincontent" class="mx-auto px-4">
+      <div
+        class="flex h-[80vh] max-h-[800px] bg-cover bg-center justify-start items-end"
+        style="background-image: url('./assets/img/homebackground.png')"
+      >
+        <div class="w-full md:w-3/5 flex-col">
+          <h1 class="text-4xl sm:text-6xl font-extralight text-white m-4">
+            SOVEREIGN TOOLS FOR CRYPTO-ECONOMIC ACTIVITY IN THE WORLD OF ATOMS
+          </h1>
+          <div>
+            <form
+              id="betasignup"
+              class="mx-4 mb-4 flex justify-items-end items-center border-2 p-1 border-white rounded-sm"
+              onsubmit="submitForm(event)"
+            >
+              <input
+                class="focus:outline-none p-2 bg-transparent tracking-wide w-full grow text-white placeholder-slate-100 focus:placeholder-zinc-700 focus:caret-yellow-400"
+                id="input-entry"
+                type="text"
+                autocomplete="off"
+                spellcheck="off"
+                placeholder="enter your email or urbit id for early access"
+                name="entry.113990400"
+                onkeydown="resetFlags()"
+              />
+              <!-- Not sure if that is the right "name" field above -->
+              <span
+                onclick="submitForm(event)"
+                id="submitbutton"
+                class="p-1 pr-4 grow-0 border-2 hover:rounded-lg hover:border-yellow-400 hover:bg-yellow-400 bg-white duration-300 border-white"
+                >&nbsp;&nbsp;&nbsp;→</span
+              >
+              <span
+                id="error"
+                class="p-1 pr-4 border-2 hover:rounded-lg hover:border-yellow-400 hover:bg-yellow-400 bg-white duration-300 border-white"
+                style="display: none"
+              >
+                Invalid Entry
+              </span>
+              <span
+                id="thanks"
+                class="p-1 pr-4 border-2 hover:rounded-lg hover:border-yellow-400 hover:bg-yellow-400 bg-white duration-300 border-white"
+                style="display: none"
+              >
+                Thanks!
+              </span>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="sm:mx-4">
+        <h2 class="pt-4 pb-2 font-semibold text-3xl">
+          What is the minimum viable product for an economy?
+        </h2>
+        <p class="py-1 text-lg">
+          For a community to have a proper market economy, participants need to
+          have open access to critical mechansims for interaction. Put bluntly,
+          peers need to be able to <span class="font-bold">propose work</span>,
+          <span class="font-bold">commit funds</span>,
+          <span class="font-bold">assess results</span>, and
+          <span class="font-bold">settle payment</span>.
+        </p>
+        <p class="py-1 text-lg">
+          Under an honest review, it is clear the crypto-economy does not yet
+          have the tools for it's own sovereignty—thus it remains unable to
+          properly interact in the world of atoms, and to have real impact on
+          human action.
+        </p>
+        <h2 id="fund" class="pt-4 pb-2 font-semibold text-3xl">
+          Introducing %fund
+        </h2>
+        <div
+          class="flex flex-wrap-reverse sm:flex-nowrap border-b-2 border-black pb-4"
+        >
+          <div class="sm:pr-4 sm:w-4/6">
+            <p class="py-1 text-xl underline">
+              %fund is a sovereign webapp built on an integrated blockchain
+              escrow ecosystem for human created, understood, and assessed "dumb
+              contracts".
+            </p>
+            <p class="py-1 text-lg">
+              By providing self-sovereign tools to the
+              <span class="font-bold">Funding Contributors</span> who
+              financially back a project, the
+              <span class="font-bold">Project Proposers</span> who scope and
+              execute the work itself, and the
+              <span class="font-bold">Escrow Assessors</span> who judge work
+              quality and payment delivery terms, %fund enables peers to
+              collaborate on projects that settle on-chain, but which operate in
+              the reality of dynamic human interaction.
+            </p>
+            <p class="py-1 text-lg">
+              <span class="font-bold">Funding Contributors</span> are able to
+              pledge support and settle outstanding pledges for proposals for
+              human action that they wish to see in the world, as well as
+              receive refunds for fulfilled pledges associated with work that
+              was not completed according to the project terms.
+            </p>
+            <p class="py-1 text-lg">
+              <span class="font-bold">Project Proposers</span> are able to draft
+              and present proposals to the world with human readable milestone
+              descriptions and funding targets, raising funding for projects of
+              arbitrary scope and budget amounts without needing to create
+              custom smart contracts.
+            </p>
+            <p class="py-1 text-lg">
+              <span class="font-bold">Escrow Assessors</span> are able to be
+              compensated for providing a fair and reputable assessment service
+              to both project proposers and funding contributors—serving as a
+              trusted arbiter of the more subjective contract terms best
+              interpreted by a human—and determine if funds in escrow are paid
+              out to proposers or refunded to contributors.
+            </p>
+            <p class="py-1 text-lg">
+              <span class="font-bold"
+                >All parties involved have persistent, pseudonymous
+                identities</span
+              >
+              linked to a sovereign personal server on a peer-to-peer network
+              (<a
+                class="underline hover:text-yellow-500"
+                href="https://urbit.org"
+                target="_blank"
+                >Urbit</a
+              >) that has a growing ecosystem of applications across which their
+              social and professional reputation carries.
+            </p>
+          </div>
+          <div class="flex mx-auto sm:pl-4 sm:max-w-xl sm:w-1/4">
+            <div
+              id="betacard"
+              class="border-2 border-black rounded-sm mx-auto my-4 p-4"
+            >
+              <h4 class="font-medium text-2xl">
+                The inital beta release will include:
+              </h4>
+              <div class="font-light">
+                <li>
+                  A censorship-resistant frontend, publicly served to the
+                  clearweb
+                </li>
+                <li>
+                  Ability to take funding contributions from any Ethereum user
+                </li>
+                <li>
+                  Free onboarding of entry-level users via existing Urbit
+                  hosting providers
+                </li>
+                <li>
+                  Escrow contracts supporting USD-denominated crowdfunding
+                  campaigns
+                </li>
+                <li>
+                  User-adjustable escrow assessor fee rate to allow for rate
+                  negotiation
+                </li>
+                <li>
+                  Ability for authenticated urbit IDs to pledge future financial
+                  support to campaigns
+                </li>
+                <li>
+                  Free application download for project monitoring and
+                  fulfillment of past pledges
+                </li>
+              </div>
+              <div class="block sm:hidden">
+                <form
+                  id="mobilesignup"
+                  class="mx-1 mt-4 flex justify-items-end items-center border-2 p-1 border-black rounded-sm"
+                  onsubmit="submitForm(event)"
+                >
+                  <input
+                    class="text-sm focus:outline-none p-2 bg-transparent tracking-wide w-full grow text-black placeholder-slate-900 focus:placeholder-zinc-700 focus:caret-yellow-400"
+                    id="input-entry"
+                    type="text"
+                    autocomplete="off"
+                    spellcheck="off"
+                    placeholder="email or urbit for beta signup"
+                    name="entry.113990400"
+                    onkeydown="resetFlags()"
+                  />
+                  <!-- Not sure if that is the right "name" field above -->
+                  <span
+                    onclick="submitForm(event)"
+                    class="p-1 pr-4 justify-items-end grow-0 border-2 rounded-lg border-yellow-400 bg-yellow-400 duration-300"
+                    >&nbsp;&nbsp;&nbsp;→</span
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-screen-xl sm:px-4 mx-auto mt-5 rounded-sm italic">
+          <h2 id="ethos" class="pt-4 pb-2 font-semibold text-3xl">
+            An ethos of builders, by builders, for builders
+          </h2>
+          <p class="py-1 text-lg">
+            Blockchains present a new landscape for economic activity, grounded
+            not in centralized power but in decentralized, rules-based
+            consensus. Instead of nation-state controlled economies, we have a
+            burgeoning new opportunity for network-state economies, where
+            voluntary participation and peer-to-peer interaction accelerate
+            innovation and human flourishing.
+          </p>
+          <p class="py-1 text-lg">
+            Yet something's missing. While blockchain-based financial assets
+            give us mechanisms for funding commitments and settlement in the
+            "world of bits", smart contracts and on-chain interactions are
+            insufficient for building anything other than a financialized
+            circular economy. A digital casino. A zero sum game.
+          </p>
+          <p class="py-1 text-lg">
+            If these new network states want a profitable economic system, they
+            need a way to produce exports. A way to interact and provide value
+            to the world outside—the world in which humans operate. Currently,
+            crypto's "export industry" looks like a hellscape of centralized
+            exchanges that make it possible to trade tokens for fiat currency.
+          </p>
+          <p class="py-1 text-lg">
+            Of course, the formation of centralized exchanges as an initial
+            export pathway is understandable. They were the clearest mechanism
+            for available technology—financial trading desks—to improve the user
+            experience for getting market participants into the world of bits.
+          </p>
+          <p class="py-1 text-lg">
+            But they create huge limitations on the realm of possible
+            applications. Centralized exchanges are easily targeted and
+            corrupted institutions—whether by deliberately hostile surveillance
+            and control organizations or apathetic profit-motivated data
+            brokers—but that is just the most apparent shortcoming.
+          </p>
+          <p class="py-1 text-lg">
+            The much more pernicious shortcoming that arises from forcing the
+            crypto world's exports through centralized exchanges is a
+            <span class="underline">bandwidth limitation</span>. There is only
+            so much money—information about the price of goods and
+            services—which can flow through these institutions before they are
+            captured, manipulated, and turned out. It is only the specific
+            details of the captors that are unknown. A question of
+            <span class="underline">when</span>, rather than a question of
+            <span class="underline">if</span>.
+          </p>
+          <p class="py-1 text-lg">
+            And as our own centralized institutions fail in myriad ways, "trust"
+            gets a bad rap in an industry that is built around 'trustless' and
+            'decentralized' financial settlement. But trust is humanity's killer
+            app. Trusted relationships across time and space have made humans
+            the global apex predator.
+          </p>
+          <p class="py-1 text-lg">
+            Trust fills the gaps as we discover the programmatic solutions, or
+            in dynamically changing environments. It is why and how institutions
+            form, and why they are captured and corrupted. To counter the
+            detrimental nature of this capture, we place trust in new
+            individuals who then form new institutions that inch ever closer to
+            deserving our trust. And thus the cycle continues.
+          </p>
+          <p class="py-1 text-lg">
+            Bitcoin disintermediated untrustworthy legacy currencies and banking
+            systems when it made financial settlement of peer-to-peer global
+            markets immediately accessible to anyone with a basic computer.
+            Ethereum made this capability programmatic.
+          </p>
+          <p class="py-1 text-lg">
+            But if network states are to push us forward to better methods of
+            human organization, money isn't the only tool to consider. The
+            mechanisms for communication, for building, and for network
+            coordination must also be disintermediated.
+          </p>
+          <p class="py-1 text-lg">
+            We aim to create tools for peer-to-peer economic relationships.
+            Economic relationships unmediated not only by payment processors or
+            central banks, but unmediated even by the tool makers. Why? Because
+            <span class="underline">you</span> can't trust a peer if
+            <span class="underline">they</span> can't trust their tools.
+          </p>
+          <p class="py-1 text-lg">
+            In giving individuals the sovereign tools to have trusted
+            peer-to-peer interactions we will enable their relationships to
+            bridge between the world of atoms and the world of bits and,
+            hopefully, build the foundations to form trustworthy institutions
+            necessary to bridge between nation states and network states.
+          </p>
+        </div>
+        <div class="text-3xl font-bold mx-auto text-center">~</div>
+      </div>
+    </div>
+    <footer class="m-4">
+      <div
+        class="justify-center border-t-2 border-black pt-2 pb-1 lg:flex lg:flex-row-reverse lg:items-center lg:justify-between"
+      >
+        <div class="flex justify-center grow lg:grow-0 lg:justify-end lg:p-2">
+          <div class="px-10 lg:px-2">
+            <a href="https://urbit.org/" target="_blank">
+              <img src="../assets/urbit-logo.svg" />
+            </a>
+          </div>
+          <div class="px-10 lg:px-2">
+            <a href="https://twitter.com/tocwex" target="_blank">
+              <img src="../assets/x-logo.svg" />
+            </a>
+          </div>
+          <div class="px-10 lg:px-2">
+            <a href="https://github.com/tocwex" target="_blank">
+              <img src="../assets/github-logo.svg" />
+            </a>
+          </div>
+        </div>
+        <div
+          class="mb-0 mt-2 text-center text-xs lg:text-base lg:m-0 lg:p-1 lg:pb-2"
+        >
+          <div
+            class="justify-center flex flex-row items-center lg:justify-start lg:px-3"
+          >
+            tocwex syndicate, corporation - 2024 - all rights reversed
+            &nbsp;<span class="justify-center mirror"> © </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/betasignup.js"></script>
+  </body>
+</html>
