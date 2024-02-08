@@ -1,4 +1,4 @@
-Codebase for tocwexsyndicate.com
+Codebase for tocwexgit syndicate.com
 
 ## Running the dev server
 
