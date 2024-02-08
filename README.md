@@ -1,4 +1,4 @@
-Codebase for pollensyndicate.com
+Codebase for tocwexsyndicate.com
 
 ## Running the dev server
 
