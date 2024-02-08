@@ -72,7 +72,6 @@
                 name="entry.113990400"
                 onkeydown="resetFlags()"
               />
-              <!-- Not sure if that is the right "name" field above -->
               <span
                 onclick="submitForm(event)"
                 id="submitbutton"
@@ -212,15 +211,15 @@
                   fulfillment of past pledges
                 </li>
               </div>
-              <div class="block sm:hidden">
+              <div class="">
                 <form
                   id="mobilesignup"
                   class="mx-1 mt-4 flex justify-items-end items-center border-2 p-1 border-black rounded-sm"
-                  onsubmit="submitForm(event)"
+                  onsubmit="submitBetaForm(event)"
                 >
                   <input
                     class="text-sm focus:outline-none p-2 bg-transparent tracking-wide w-full grow text-black placeholder-slate-900 focus:placeholder-zinc-700 focus:caret-yellow-400"
-                    id="input-entry"
+                    id="mobile-entry"
                     type="text"
                     autocomplete="off"
                     spellcheck="off"
@@ -228,12 +227,26 @@
                     name="entry.113990400"
                     onkeydown="resetFlags()"
                   />
-                  <!-- Not sure if that is the right "name" field above -->
                   <span
-                    onclick="submitForm(event)"
-                    class="p-1 pr-4 justify-items-end grow-0 border-2 rounded-lg border-yellow-400 bg-yellow-400 duration-300"
+                    onclick="submitBetaForm(event)"
+                    id="mobile-submitbutton"
+                    class="p-1 pr-4 justify-items-end grow-0 border-2 rounded-lg border-yellow-400 bg-yellow-400 duration-300 sm:hover:border-yellow-400 sm:hover:bg-yellow-400 sm:bg-white sm:border-black sm:rounded-sm sm:hover:rounded-lg"
                     >&nbsp;&nbsp;&nbsp;→</span
                   >
+                  <span
+                    id="mobile-error"
+                    class="p-1 pr-4 justify-items-end grow-0 border-2 rounded-lg border-yellow-400 bg-yellow-400 duration-300 sm:hover:border-yellow-400 sm:hover:bg-yellow-400 sm:bg-white sm:border-black sm:rounded-sm sm:hover:rounded-lg"
+                    style="display: none"
+                  >
+                    Invalid Entry
+                  </span>
+                  <span
+                    id="mobile-thanks"
+                    class="p-1 pr-4 justify-items-end grow-0 border-2 rounded-lg border-yellow-400 bg-yellow-400 duration-300 sm:hover:border-yellow-400 sm:hover:bg-yellow-400 sm:bg-white sm:border-black sm:rounded-sm sm:hover:rounded-lg"
+                    style="display: none"
+                  >
+                    &nbsp;&nbsp;&nbsp;Thanks!
+                  </span>
                 </form>
               </div>
             </div>
@@ -368,5 +381,6 @@
       </div>
     </footer>
     <script src="/assets/js/betasignup.js"></script>
+    <script src="/assets/js/mobilesignup.js"></script>
   </body>
 </html>

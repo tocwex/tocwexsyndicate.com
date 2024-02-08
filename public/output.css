@@ -893,6 +893,20 @@ body {
     flex-wrap: nowrap;
   }
 
+  .sm\:rounded-sm{
+    border-radius: 0.125rem;
+  }
+
+  .sm\:border-black{
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  }
+
+  .sm\:bg-white{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
   .sm\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -909,6 +923,20 @@ body {
   .sm\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .sm\:hover\:rounded-lg:hover{
+    border-radius: 0.5rem;
+  }
+
+  .sm\:hover\:border-yellow-400:hover{
+    --tw-border-opacity: 1;
+    border-color: rgb(250 204 21 / var(--tw-border-opacity));
+  }
+
+  .sm\:hover\:bg-yellow-400:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(250 204 21 / var(--tw-bg-opacity));
   }
 }
 
