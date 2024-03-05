@@ -590,6 +590,9 @@ video {
 .grow-0{
   flex-grow: 0;
 }
+.cursor-pointer{
+  cursor: pointer;
+}
 .flex-row{
   flex-direction: row;
 }

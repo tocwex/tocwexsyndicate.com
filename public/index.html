@@ -58,13 +58,13 @@
           </h1>
           <div>
             <form
-              id="betasignup"
+              id="headersignup"
               class="mx-4 mb-4 flex justify-items-end items-center border-2 p-1 border-white rounded-sm"
-              onsubmit="submitForm(event)"
+              onsubmit="submitHeaderForm(event)"
             >
               <input
                 class="focus:outline-none p-2 bg-transparent tracking-wide w-full grow text-white placeholder-slate-100 focus:placeholder-zinc-700 focus:caret-yellow-400"
-                id="input-entry"
+                id="header-input-entry"
                 type="text"
                 autocomplete="off"
                 spellcheck="off"
@@ -73,21 +73,21 @@
                 onkeydown="resetFlags()"
               />
               <span
-                onclick="submitForm(event)"
-                id="submitbutton"
-                class="p-1 pr-4 grow-0 border-2 hover:rounded-lg hover:border-yellow-400 hover:bg-yellow-400 bg-white duration-300 border-white"
+                onclick="submitHeaderForm(event)"
+                id="header-submitbutton"
+                class="cursor-pointer p-1 pr-4 grow-0 border-2 hover:rounded-lg hover:border-yellow-400 hover:bg-yellow-400 bg-white duration-300 border-white"
                 >&nbsp;&nbsp;&nbsp;→</span
               >
               <span
-                id="error"
-                class="p-1 pr-4 border-2 hover:rounded-lg hover:border-yellow-400 hover:bg-yellow-400 bg-white duration-300 border-white"
+                id="header-error"
+                class="cursor-pointer p-1 pr-4 border-2 hover:rounded-lg hover:border-yellow-400 hover:bg-yellow-400 bg-white duration-300 border-white"
                 style="display: none"
               >
                 Invalid Entry
               </span>
               <span
-                id="thanks"
-                class="p-1 pr-4 border-2 hover:rounded-lg hover:border-yellow-400 hover:bg-yellow-400 bg-white duration-300 border-white"
+                id="header-thanks"
+                class="cursor-pointer p-1 pr-4 border-2 hover:rounded-lg hover:border-yellow-400 hover:bg-yellow-400 bg-white duration-300 border-white"
                 style="display: none"
               >
                 Thanks!
@@ -123,8 +123,11 @@
           <div class="sm:pr-4 sm:w-4/6">
             <p class="py-1 text-xl underline">
               %fund is a sovereign webapp built on an integrated blockchain
-              escrow ecosystem for human created, understood, and assessed "dumb
-              contracts".
+              escrow ecosystem for human created, understood, and assessed
+              <a
+                href="https://deliverypdf.ssrn.com/delivery.php?ID=132088086121072013089084070113111108125018001047091022000125086006124127094094122126045055003101126027111027064103098085068066009041023059084025026076115116122120005092001082005112022093085098001082083096115097097086090096020084099089112093013117066&EXT=pdf&INDEX=TRUE"
+                >"wise contracts"<sup>1</sup></a
+              >.
             </p>
             <p class="py-1 text-lg">
               By providing self-sovereign tools to the
@@ -215,7 +218,7 @@
                 <form
                   id="mobilesignup"
                   class="mx-1 mt-4 flex justify-items-end items-center border-2 p-1 border-black rounded-sm"
-                  onsubmit="submitBetaForm(event)"
+                  onsubmit="submitMobileForm(event)"
                 >
                   <input
                     class="text-sm focus:outline-none p-2 bg-transparent tracking-wide w-full grow text-black placeholder-slate-900 focus:placeholder-zinc-700 focus:caret-yellow-400"
@@ -228,21 +231,21 @@
                     onkeydown="resetFlags()"
                   />
                   <span
-                    onclick="submitBetaForm(event)"
+                    onclick="submitMobileForm(event)"
                     id="mobile-submitbutton"
-                    class="p-1 pr-4 justify-items-end grow-0 border-2 rounded-lg border-yellow-400 bg-yellow-400 duration-300 sm:hover:border-yellow-400 sm:hover:bg-yellow-400 sm:bg-white sm:border-black sm:rounded-sm sm:hover:rounded-lg"
+                    class="cursor-pointer p-1 pr-4 justify-items-end grow-0 border-2 rounded-lg border-yellow-400 bg-yellow-400 duration-300 sm:hover:border-yellow-400 sm:hover:bg-yellow-400 sm:bg-white sm:border-black sm:rounded-sm sm:hover:rounded-lg"
                     >&nbsp;&nbsp;&nbsp;→</span
                   >
                   <span
                     id="mobile-error"
-                    class="p-1 pr-4 justify-items-end grow-0 border-2 rounded-lg border-yellow-400 bg-yellow-400 duration-300 sm:hover:border-yellow-400 sm:hover:bg-yellow-400 sm:bg-white sm:border-black sm:rounded-sm sm:hover:rounded-lg"
+                    class="cursor-pointer p-1 pr-4 justify-items-end grow-0 border-2 rounded-lg border-yellow-400 bg-yellow-400 duration-300 sm:hover:border-yellow-400 sm:hover:bg-yellow-400 sm:bg-white sm:border-black sm:rounded-sm sm:hover:rounded-lg"
                     style="display: none"
                   >
                     Invalid Entry
                   </span>
                   <span
                     id="mobile-thanks"
-                    class="p-1 pr-4 justify-items-end grow-0 border-2 rounded-lg border-yellow-400 bg-yellow-400 duration-300 sm:hover:border-yellow-400 sm:hover:bg-yellow-400 sm:bg-white sm:border-black sm:rounded-sm sm:hover:rounded-lg"
+                    class="cursor-pointer p-1 pr-4 justify-items-end grow-0 border-2 rounded-lg border-yellow-400 bg-yellow-400 duration-300 sm:hover:border-yellow-400 sm:hover:bg-yellow-400 sm:bg-white sm:border-black sm:rounded-sm sm:hover:rounded-lg"
                     style="display: none"
                   >
                     &nbsp;&nbsp;&nbsp;Thanks!
@@ -382,5 +385,6 @@
     </footer>
     <script src="/assets/js/betasignup.js"></script>
     <script src="/assets/js/mobilesignup.js"></script>
+    <script src="/assets/js/headersignup.js"></script>
   </body>
 </html>

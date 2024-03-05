@@ -19,7 +19,7 @@ function invalid() {
   return false;
 }
 
-function submitBetaForm(event) {
+function submitMobileForm(event) {
   event.preventDefault();
   loading = true;
 
