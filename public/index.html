@@ -30,19 +30,14 @@
             <a href="#fund">%fund</a>
           </div>
           <div
-            class="sm:block hidden mx-2 p-1.5 border-2 border-white ease-in-out hover:italic active:underline active:italic duration-300"
+            class="mx-2 p-1.5 border-2 border-white ease-in-out hover:italic active:underline active:italic duration-300"
           >
-            <a href="#ethos">ethos</a>
+            <a href="https://docs.tocwexsyndicate.com">docs</a>
           </div>
           <div
-            class="hidden sm:block mx-2 p-1.5 border-2 duration-300 border-black hover:rounded-lg hover:bg-yellow-400 hover:border-yellow-400 rounded-sm"
+            class="mx-2 p-1.5 border-2 duration-300 border-black hover:rounded-lg hover:bg-yellow-400 hover:border-yellow-400 rounded-sm"
           >
-            <a href="#betasignup">beta access</a>
-          </div>
-          <div
-            class="sm:hidden block mx-2 p-1.5 border-2 duration-300 border-black hover:rounded-lg hover:bg-yellow-400 hover:border-yellow-400 rounded-sm"
-          >
-            <a href="#betacard">beta access</a>
+            <a href="#get-fund-card">beta access</a>
           </div>
         </div>
       </ul>
@@ -68,7 +63,7 @@
                 type="text"
                 autocomplete="off"
                 spellcheck="off"
-                placeholder="enter your email or urbit id for early access"
+                placeholder="enter your email or urbit id for updates"
                 name="entry.113990400"
                 onkeydown="resetFlags()"
               />
@@ -118,7 +113,7 @@
           Introducing %fund
         </h2>
         <div
-          class="flex flex-wrap-reverse sm:flex-nowrap border-b-2 border-black pb-4"
+          class="flex items-start flex-wrap sm:flex-nowrap border-b-2 border-black pb-4"
         >
           <div class="sm:pr-4 sm:w-4/6">
             <p class="py-1 text-xl underline">
@@ -140,6 +135,39 @@
               collaborate on projects that settle on-chain, but which operate in
               the reality of dynamic human interaction.
             </p>
+            <div
+              id="get-fund-card"
+              class="border-2 border-black rounded-sm mx-auto my-4 p-4"
+            >
+              <div class="">
+                <div class="py-2 font-medium text-2xl">
+                  Want access and a free Urbit ID NFT?
+                </div>
+                <div>
+                  The best way to interact with %fund is to run it on your own
+                  urbit. Sign up with our hosting partner, Red Horizon, to get a
+                  free urbit planet that comes pre-loaded with %fund.
+                </div>
+                <div class="py-2 mx-auto">
+                  <div
+                    class="inline-block p-1.5 border-2 duration-300 hover:border-black hover:bg-white rounded-lg bg-yellow-400 border-yellow-400 hover:rounded-sm"
+                  >
+                    <a
+                      href="https://redhorizon.com/join/217ddb05-07f1-4897-8c6a-d6ef76da7380"
+                      >get %fund</a
+                    >
+                  </div>
+                </div>
+                <div class="italic text-sm">
+                  I'm on urbit,
+                  <span class="underline hover:text-yellow-500">
+                    <a href="https://docs.tocwexsyndicate.com/#installing-fund"
+                      >just give me the install instructions.</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
             <p class="py-1 text-lg">
               <span class="font-bold">Project funders</span> are able to pledge
               support and settle outstanding pledges for proposals for human
@@ -182,16 +210,15 @@
               id="betacard"
               class="border-2 border-black rounded-sm mx-auto my-4 p-4"
             >
-              <h4 class="font-medium text-2xl">
-                The inital beta release will include:
-              </h4>
+              <h4 class="pt-2 font-medium text-xl">The %fund beta includes:</h4>
               <div class="font-light">
                 <li>
                   A censorship-resistant frontend, publicly served to the
                   clearweb
                 </li>
                 <li>
-                  Ability to take funding contributions from any Ethereum user
+                  The ability to take funding contributions from any Ethereum
+                  user
                 </li>
                 <li>
                   Free onboarding of entry-level users via existing Urbit
@@ -202,7 +229,7 @@
                   campaigns
                 </li>
                 <li>
-                  User-adjustable escrow assessor fee rate to allow for rate
+                  User-adjustable trusted oracle fee rate to allow for rate
                   negotiation
                 </li>
                 <li>
@@ -213,44 +240,6 @@
                   Free application download for project monitoring and
                   fulfillment of past pledges
                 </li>
-              </div>
-              <div class="">
-                <form
-                  id="mobilesignup"
-                  class="mx-1 mt-4 flex justify-items-end items-center border-2 p-1 border-black rounded-sm"
-                  onsubmit="submitMobileForm(event)"
-                >
-                  <input
-                    class="text-sm focus:outline-none p-2 bg-transparent tracking-wide w-full grow text-black placeholder-slate-900 focus:placeholder-zinc-700 focus:caret-yellow-400"
-                    id="mobile-entry"
-                    type="text"
-                    autocomplete="off"
-                    spellcheck="off"
-                    placeholder="email or urbit for beta signup"
-                    name="entry.113990400"
-                    onkeydown="resetFlags()"
-                  />
-                  <span
-                    onclick="submitMobileForm(event)"
-                    id="mobile-submitbutton"
-                    class="cursor-pointer p-1 pr-4 justify-items-end grow-0 border-2 rounded-lg border-yellow-400 bg-yellow-400 duration-300 sm:hover:border-yellow-400 sm:hover:bg-yellow-400 sm:bg-white sm:border-black sm:rounded-sm sm:hover:rounded-lg"
-                    >&nbsp;&nbsp;&nbsp;→</span
-                  >
-                  <span
-                    id="mobile-error"
-                    class="cursor-pointer p-1 pr-4 justify-items-end grow-0 border-2 rounded-lg border-yellow-400 bg-yellow-400 duration-300 sm:hover:border-yellow-400 sm:hover:bg-yellow-400 sm:bg-white sm:border-black sm:rounded-sm sm:hover:rounded-lg"
-                    style="display: none"
-                  >
-                    Invalid Entry
-                  </span>
-                  <span
-                    id="mobile-thanks"
-                    class="cursor-pointer p-1 pr-4 justify-items-end grow-0 border-2 rounded-lg border-yellow-400 bg-yellow-400 duration-300 sm:hover:border-yellow-400 sm:hover:bg-yellow-400 sm:bg-white sm:border-black sm:rounded-sm sm:hover:rounded-lg"
-                    style="display: none"
-                  >
-                    &nbsp;&nbsp;&nbsp;Thanks!
-                  </span>
-                </form>
               </div>
             </div>
           </div>
@@ -356,7 +345,10 @@
       >
         <div class="flex justify-center grow lg:grow-0 lg:justify-end lg:p-2">
           <div class="px-10 lg:px-2">
-            <a href="https://urbit.org/" target="_blank">
+            <a
+              href="https://tlon.network/lure/~tocwex/syndicate-public"
+              target="_blank"
+            >
               <img src="../assets/urbit-logo.svg" />
             </a>
           </div>
@@ -377,8 +369,11 @@
           <div
             class="justify-center flex flex-row items-center lg:justify-start lg:px-3"
           >
-            tocwex syndicate, corporation - 2024 - all rights reversed
-            &nbsp;<span class="justify-center mirror"> © </span>
+            tocwex, syndicate - 2024 - all rights reversed &nbsp;<span
+              class="justify-center mirror"
+            >
+              ©
+            </span>
           </div>
         </div>
       </div>
